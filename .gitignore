@@ -1,0 +1,15 @@
+.gradle
+.idea
+scratch/
+node_modules/
+app/webapp/node_modules
+utils/
+mostcommand.txt
+uploads/
+server_ori.js
+.DS_Store
+
+#tolong file ini jangan di push
+config.js
+composer.phar
+composer-setup.php
