@@ -21,8 +21,8 @@ return [
                 'options' => [
                     'route'    => '/',
                     'defaults' => [
-                        // 'controller' => Controller\IndexController::class,
-                        'controller' => AlbumController::class,
+                         'controller' => Controller\IndexController::class,
+//                        'controller' => AlbumController::class,
                         'action'     => 'index',
                     ],
                 ],
@@ -60,4 +60,33 @@ return [
             __DIR__ . '/../view',
         ],
     ],
+    'navigation' => [
+            'default' => [
+                [
+                    'label' => 'Home',
+                    'route' => 'home',
+                ],
+                [
+                    'label' => 'Album',
+                    'route' => 'album',
+                    'pages' => [
+                        [
+                            'label'  => 'Add',
+                            'route'  => 'album',
+                            'action' => 'add',
+                        ],
+                        [
+                            'label'  => 'Edit',
+                            'route'  => 'album',
+                            'action' => 'edit',
+                        ],
+                        [
+                            'label'  => 'Delete',
+                            'route'  => 'album',
+                            'action' => 'delete',
+                        ],
+                    ],
+                ],
+            ],
+        ],
 ];
